@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(salmon, lightblue);
+    margin: 0;
+    padding: 0;
+}
+.caja{
+    border: color(black);
+}
