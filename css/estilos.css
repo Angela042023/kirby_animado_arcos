@@ -6,86 +6,136 @@ body{
     margin: 0;
     padding: 0;
 }
-.caja{
-    border: color(black);
+.fondo{
+    height: 1080px;
+    width: 1920px;
+    background: wheat;
 }
-.capa0 {
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 0;
-}
+
 
 .capa1 {
     position: absolute;
     left: 10px;
     top: 100px;
     z-index: 1;
-}
 
+}
 .capa2 {
+
+        position: absolute;
+        left: 10px;
+        top: 100px;
+        z-index: 2;
+    }
+.capa3{
     position: absolute;
     left: 10px;
-    top: 0px;
-    z-index: 2;
-}
-
-.capa3 {
-    position: absolute;
-    left: 100px;
-    top:  180px;
-    width: calc(50% - 150px);
+    top: 100px;
     z-index: 3;
 }
-.capa4{
-    position: absolute;
-    left: 1330px;
-    top: 300px;
-    width: calc(50% - 150px);
-    z-index: 4;
-}
-.capa5{
-    position: absolute;
-    left: 480px;
-    top: 400px;
-    z-index: 5;
-}
-.anima1{
+.anima1 {
     position: relative;
-    animation: mario 6s infinite;
-}
-@keyframes mario{
-    0% {left: 0px; top: 490px; width: 350px;}
-    40% {left: 550px; top: 490px; width: 350px;}
-    50% {left: 550px; top: 490px; width: 350px;}
-    51% {left: 600px; top: 490px; width: 1px;}
-    100% {left: 550px; top: 490; width: 1px;}
-  
-}
-.anima2{
-    position: relative;
-    animation: volando 6s infinite;
-}
-@keyframes volando{
-    0%, 100% {
-        transform: translateY(0);
-        animation-timing-function: ease-in;
-      }
-      50% {
-        transform: translateY(-100px);
-        animation-timing-function: ease-out;
-      }
-    }
-    
+    animation: comiendo 4s infinite;
 
+}
+.anima2 {
+    position: relative;
+    animation: volando 4s infinite;
+
+}
 .anima3{
     position: relative;
-    animation: dead_mario 6s infinite;
+    animation: waddle_dee 4s infinite;
 }
-@keyframes dead_mario{
-    0%{left: 100px; top: 400px; width: 0px;}
-    49%{left: 100px; top: 400px; width: 0px;}
-    50%{left: 500px; top: 580px; width: 350px;}
-    55%{left: 500px; top: 400px; width: 350px;}
-    100%{left: 500px; top: 1300px; width: 350px;}
+
+@keyframes comiendo{
+    0% {
+        left: 0%;top: 500px;width: 0px;
+    }
+
+    20% {
+        left: 20%;top: 0px;width: 0px;
+    }
+
+    40% {
+        left: 40%;top: 500px;width: 0px;
+    }
+ 
+    41% {
+        left: 41%;top: 499px;width: 500px;
+    }
+    59% {
+        left: 59%;top: 1px;width: 500px;
+    }
+    60% {
+        left: 60%;top: 0px;width: 0px;
+        
+       
+    }
+
+    80% {
+        left: 80%;top:500px;width: 0px;
+        
+    }
+
+    100% {
+        left: 100%;top:0px;width: 0px;
+    }
+    }
+
+@keyframes volando{
+    0% {
+        left: 0%;top: 500px;rotate:y -180deg;width: 500px;
+    }
+
+    20% {
+        left: 20%;top: 0px;rotate:y -180deg;width: 500px;
+    }
+
+    40% {
+        left: 40%;top: 500px; rotate:y -180deg;width: 500px;
+    }
+ 
+    41% {
+        left: 41%;top: 499px; rotate:y -180deg;width: 0px;
+    }
+    59% {
+        left: 59%;top: 1px; rotate:y -180deg;width: 0px;
+    }
+    60% {
+        left: 60%;top: 0px;rotate:y -180deg;width: 500px;
+        
+       
+    }
+
+    80% {
+        left: 80%;top:500px;rotate:y -180deg;width: 500px;
+        
+    }
+
+    100% {
+        left: 100%;top:0px;rotate:y -180deg;width: 500px;
+    }
+}
+
+@keyframes waddle_dee{
+    0%{
+        left: 100%; top: 0px; width: 500px;
+    }
+    20%{
+        left: 80%; top: 250px; width: 500px;
+    }
+    40%{
+        left: 50%; top: 0px; width: 500px;
+    }
+    50%{
+        left: 60%; top: 0px; width: 500px;
+    }
+    55%{
+        left: 50%; top: 0px; width: 0px;
+    }
+    100%{
+        left: 50%; top: 0px; width: 0px;
+    }
+
 }
