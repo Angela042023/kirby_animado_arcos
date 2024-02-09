@@ -9,7 +9,8 @@ body{
 .fondo{
     height: 1080px;
     width: 1920px;
-    background: wheat;
+    background: wheat; 
+    overflow: hidden;
 }
 
 
@@ -50,25 +51,25 @@ body{
 
 @keyframes comiendo{
     0% {
-        left: 0%;top: 500px;width: 0px;
+        left: 0%;top: 500%;width: 0px;
     }
 
     20% {
-        left: 20%;top: 0px;width: 0px;
+        left: 20%;top: 0%;width: 0px;
     }
 
     40% {
-        left: 40%;top: 500px;width: 0px;
+        left: 40%;top: 500%;width: 0px;
     }
  
     41% {
-        left: 41%;top: 499px;width: 500px;
+        left: 41%;top: 499%;width: 500px;
     }
     59% {
-        left: 59%;top: 1px;width: 500px;
+        left: 59%;top: 1%;width: 500px;
     }
     60% {
-        left: 60%;top: 0px;width: 0px;
+        left: 60%;top: 0%;width: 0px;
         
        
     }
